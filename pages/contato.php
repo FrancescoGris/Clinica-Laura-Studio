@@ -1,28 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Agendar Horário — Clinica Laura Studio</title>
-  <meta name="description" content="Agende seu horário com a Clinica Laura Studio — design de sobrancelhas em Campo Mourão.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script id="pixel-chaty" async src="https://cdn.chaty.app/pixel.js?id=b4cJrVjh"></script>
-</head>
-<body class="page-body contato-page">
-
-<?php include 'nav.php'; ?>
-
 <div class="contato-inner">
   <span class="eyebrow reveal">Agendamento</span>
-  <h1 class="reveal">Marque seu <em>horário</em></h1>
+  <h   class="reveal">Marque seu <em>horário</em></h1>
   <p class="reveal reveal-delay-1">
-    Preencha o formulário abaixo e enviarei uma mensagem diretamente para o seu WhatsApp confirmando o horário. Será um prazer te atender!
+    Preencha o formulário abaixo e você será redirecionada ao WhatsApp com a mensagem já preenchida. Será um prazer te atender!
   </p>
 
   <form id="agendamentoForm" novalidate>
-
     <div class="form-row reveal reveal-delay-1">
       <div class="form-group">
         <label for="nome">Nome</label>
@@ -49,20 +32,16 @@
       <label>Serviço de interesse</label>
       <div class="form-servico">
         <label class="servico-option">
-          <input type="radio" name="servico" value="Design de sobrancelhas" checked>
-          Design de sobrancelhas
+          <input type="radio" name="servico" value="Design de sobrancelhas" checked> Design de sobrancelhas
         </label>
         <label class="servico-option">
-          <input type="radio" name="servico" value="Henna de sobrancelhas">
-          Henna de sobrancelhas
+          <input type="radio" name="servico" value="Henna de sobrancelhas"> Henna de sobrancelhas
         </label>
         <label class="servico-option">
-          <input type="radio" name="servico" value="Micropigmentação">
-          Micropigmentação
+          <input type="radio" name="servico" value="Micropigmentação"> Micropigmentação
         </label>
         <label class="servico-option">
-          <input type="radio" name="servico" value="Outro / Consulta">
-          Outro / Consulta
+          <input type="radio" name="servico" value="Outro / Consulta"> Outro / Consulta
         </label>
       </div>
     </div>
@@ -83,25 +62,16 @@
       </button>
       <span class="form-note">Você será redirecionada ao WhatsApp</span>
     </div>
-
   </form>
 </div>
 
-<!-- Máscara de telefone -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 <script>
-  $(document).ready(function() {
-    $('#telefone').mask('(00) 00000-0000');
-  });
-</script>
-
-<script>
-  const WHATSAPP_NUMBER = '5544999514785';
+  $(document).ready(function() { $('#telefone').mask('(00) 00000-0000'); });
 
   document.getElementById('agendamentoForm').addEventListener('submit', function(e) {
     e.preventDefault();
-
     const nome      = document.getElementById('nome').value.trim();
     const sobrenome = document.getElementById('sobrenome').value.trim();
     const telefone  = document.getElementById('telefone').value.trim();
@@ -110,26 +80,18 @@
     const mensagem  = document.getElementById('mensagem').value.trim();
     const confirmar = document.getElementById('confirmar').checked;
 
-    // Validação básica
     if (!nome || !sobrenome || !telefone || !confirmar) {
       alert('Por favor, preencha nome, sobrenome, telefone e confirme as informações.');
       return;
     }
 
-    // Monta a mensagem do WhatsApp
     let texto = `Olá, Laura! Gostaria de agendar um horário. 🌸\n\n`;
     texto += `*Nome:* ${nome} ${sobrenome}\n`;
     texto += `*Telefone:* ${telefone}\n`;
-    if (email) texto += `*E-mail:* ${email}\n`;
+    if (email)    texto += `*E-mail:* ${email}\n`;
     texto += `*Serviço:* ${servico}\n`;
     if (mensagem) texto += `*Mensagem:* ${mensagem}\n`;
 
-    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(texto)}`;
-    window.open(url, '_blank');
+    window.open(`https://wa.me/5544999514785?text=${encodeURIComponent(texto)}`, '_blank');
   });
 </script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-<?php include 'footer.php'; ?>
-</body>
-</html>
