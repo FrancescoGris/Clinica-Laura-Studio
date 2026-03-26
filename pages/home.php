@@ -20,7 +20,7 @@
     <div class="hero-ornament">Campo Mourão, PR</div>
   </div>
   <div class="hero-image">
-    <img src="img/is.png" alt="Clínica Laura Studio — Design de Sobrancelhas">
+    <img src="img/home-face.jpg" alt="Clínica Laura Studio — Design de Sobrancelhas">
   </div>
 </section>
 
@@ -38,7 +38,7 @@
       </p>
       <div class="sobre-divider reveal reveal-delay-3"></div>
       <a href="/Clinica-Laura-Studio/contato" class="btn-primary-custom reveal reveal-delay-3">
-        <i class="fa-brands fa-whatsapp"></i> Fale comigo
+        <i class="fa-brands fa-whatsapp" style="font-size:20px"></i> Fale comigo
       </a>
     </div>
   </div>

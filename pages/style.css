@@ -61,6 +61,7 @@ body {
   align-items: center;
   gap: 40px;
   list-style: none;
+  margin: 0;
 }
 
 .nav-links a {
@@ -275,20 +276,21 @@ body {
 
 /* ─── SLOGAN ─────────────────────────────────────────────────── */
 .slogan-strip {
-  background: var(--plum);
+  background: var(--blush);
   padding: 80px 48px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  border-top: 1px solid var(--blush-mid);
+  border-bottom: 1px solid var(--blush-mid);
 }
 .slogan-strip::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 50% 100%, rgba(201,168,108,0.15) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 50%, rgba(107,15,130,0.06) 0%, transparent 70%);
 }
-.slogan-strip img { max-width: 680px; width: 90%; filter: brightness(0) invert(1); opacity: 0.95; position: relative; z-index: 1; }
-
+.slogan-strip img { max-width: 680px; width: 90%; position: relative; z-index: 1; }
 /* ─── AGENDA CTA ─────────────────────────────────────────────── */
 .agenda-cta { padding: 100px 24px; text-align: center; background: var(--cream); }
 .agenda-cta p { font-family: var(--f-display); font-size: clamp(1.3rem, 3vw, 2rem); font-weight: 300; color: var(--ink-soft); margin-bottom: 40px; font-style: italic; }
