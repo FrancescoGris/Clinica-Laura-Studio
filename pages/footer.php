@@ -5,7 +5,7 @@
       <div class="tagline">Design de Sobrancelhas</div>
     </div>
     <div class="footer-socials">
-      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+      <a href="https://www.instagram.com/francesco.gris/" target="_blank" rel="noopener" aria-label="Instagram">
         <i class="fa-brands fa-instagram"></i>
       </a>
       <a href="https://wa.me/5544999514785" target="_blank" rel="noopener" aria-label="WhatsApp">
