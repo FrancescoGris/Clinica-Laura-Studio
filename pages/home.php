@@ -37,17 +37,12 @@
         Mais do que estética, acredito que uma sobrancelha bem feita é capaz de transformar a forma como a gente se vê. Um olhar harmonioso, bem cuidado, para te trazer confiança e autoestima — revelando o melhor de cada pessoa.
       </p>
       <div class="sobre-divider reveal reveal-delay-3"></div>
-      <a href="/Clinica-Laura-Studio/contato" class="btn-primary-custom reveal reveal-delay-3">
+      <a href="https://wa.me/5544999514785" class="btn-primary-custom reveal reveal-delay-3">
         <i class="fa-brands fa-whatsapp" style="font-size:20px"></i> Fale comigo
       </a>
     </div>
   </div>
 </section>
-
-<!-- SLOGAN -->
-<div class="slogan-strip reveal">
-  <img src="img/slogan.png" alt="Slogan Clínica Laura Studio">
-</div>
 
 <!-- CTA -->
 <section class="agenda-cta">

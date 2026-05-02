@@ -14,7 +14,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span>© 2025 Clínica Laura Studio — Todos os direitos reservados</span>
+    <span>© 2026 Clínica Laura Studio — Todos os direitos reservados</span>
     <a href="https://www.linkedin.com/in/francesco-gris-053092355/" target="_blank" rel="noopener">
       Desenvolvido por Francesco Gris
     </a>
