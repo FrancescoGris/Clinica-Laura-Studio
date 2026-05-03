@@ -3,6 +3,10 @@
     <img src="img/logo-header.png" alt="Clínica Laura Studio">
   </a>
 
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+    <span></span><span></span><span></span>
+  </button>
+
   <ul class="nav-links" id="navLinks">
     <li><a href="<?= BASE_URL ?>/home">Home</a></li>
     <li><a href="<?= BASE_URL ?>/resultados">Resultados</a></li>
@@ -11,35 +15,34 @@
 </nav>
 
 <script>
-  // Scroll shadow
   const nav = document.getElementById('siteNav');
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 20);
   });
 
-  // Active link highlight
   const path = window.location.pathname.split('/').pop();
   document.querySelectorAll('.nav-links a:not(.nav-cta)').forEach(a => {
     const href = a.getAttribute('href').split('/').pop();
     if (href === path) a.classList.add('active');
   });
 
-  // Hamburger toggle
+  // ← Protegido contra nulo
   const toggle = document.getElementById('navToggle');
   const links  = document.getElementById('navLinks');
-  toggle.addEventListener('click', () => {
-    links.classList.toggle('open');
-    const spans = toggle.querySelectorAll('span');
-    if (links.classList.contains('open')) {
-      spans[0].style.transform = 'rotate(45deg) translate(4px, 5px)';
-      spans[1].style.opacity   = '0';
-      spans[2].style.transform = 'rotate(-45deg) translate(4px, -5px)';
-    } else {
-      spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
-    }
-  });
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      const spans = toggle.querySelectorAll('span');
+      if (links.classList.contains('open')) {
+        spans[0].style.transform = 'rotate(45deg) translate(4px, 5px)';
+        spans[1].style.opacity   = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(4px, -5px)';
+      } else {
+        spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+      }
+    });
+  }
 
-  // Scroll reveal
   document.addEventListener('DOMContentLoaded', () => {
     const reveals  = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver(entries => {

@@ -10,10 +10,10 @@
       Design de sobrancelhas artesanal — feito com cuidado, precisão e um olhar apurado para revelar o melhor de cada rosto.
     </p>
     <div class="hero-actions">
-      <a href="/Clinica-Laura-Studio/contato" class="btn-primary-custom">
+      <a href="<?= BASE_URL ?>/contato" class="btn-primary-custom">
         <i class="fa-regular fa-calendar"></i> Agendar horário
       </a>
-      <a href="/Clinica-Laura-Studio/resultados" class="btn-secondary-custom">
+      <a href="<?= BASE_URL ?>/resultados" class="btn-secondary-custom">
         Ver resultados
       </a>
     </div>
@@ -47,7 +47,7 @@
 <!-- CTA -->
 <section class="agenda-cta">
   <p class="reveal">Pronta para transformar o seu olhar?</p>
-  <a href="/Clinica-Laura-Studio/contato" class="btn-primary-custom reveal reveal-delay-1">
+  <a href="<?= BASE_URL ?>/contato" class="btn-primary-custom reveal reveal-delay-1">
     <i class="fa-regular fa-calendar"></i> Agendar consulta
   </a>
 </section>

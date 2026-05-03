@@ -104,7 +104,7 @@ $carrosselResultados = $carrosselResultados ?? [];
 <!-- CTA -->
 <section class="agenda-cta">
   <p class="reveal">Quer um resultado assim?</p>
-  <a href="contato" class="btn-primary-custom reveal reveal-delay-1">
+  <a href="<?= BASE_URL ?>/contato" class="btn-primary-custom reveal reveal-delay-1">
     <i class="fa-regular fa-calendar"></i> Agendar horário
   </a>
 </section>
