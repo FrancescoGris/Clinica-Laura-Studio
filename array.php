@@ -7,10 +7,10 @@ $fotoresultado = [
 ];
 
 $carrosselResultados = [
-    ['foto' => 'img/resultados/antes-depois1.png', 'alt' => 'Antes e depois — design de sobrancelhas 1'],
-    ['foto' => 'img/resultados/antes-depois2.png', 'alt' => 'Antes e depois — design de sobrancelhas 2'],
-    ['foto' => 'img/resultados/antes-depois3.png', 'alt' => 'Antes e depois — design de sobrancelhas 3'],
-    ['foto' => 'img/resultados/antes-depois4.png', 'alt' => 'Antes e depois — design de sobrancelhas 4'],
-    ['foto' => 'img/resultados/antes-depois5.png', 'alt' => 'Antes e depois — design de sobrancelhas 5'],
+    ['foto' => 'img/resultados/antes-depois1.webp', 'alt' => 'Antes e depois — design de sobrancelhas 1'],
+    ['foto' => 'img/resultados/antes-depois2.webp', 'alt' => 'Antes e depois — design de sobrancelhas 2'],
+    ['foto' => 'img/resultados/antes-depois3.webp', 'alt' => 'Antes e depois — design de sobrancelhas 3'],
+    ['foto' => 'img/resultados/antes-depois4.webp', 'alt' => 'Antes e depois — design de sobrancelhas 4'],
+    ['foto' => 'img/resultados/antes-depois5.webp', 'alt' => 'Antes e depois — design de sobrancelhas 5'],
 ];
 ?>

@@ -1,16 +1,12 @@
 <nav class="site-nav" id="siteNav">
-  <a href="/Clinica-Laura-Studio/home" class="nav-brand">
+  <a href="<?= BASE_URL ?>/home" class="nav-brand">
     <img src="img/logo-header.png" alt="Clínica Laura Studio">
   </a>
 
-  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
-    <span></span><span></span><span></span>
-  </button>
-
   <ul class="nav-links" id="navLinks">
-    <li><a href="/Clinica-Laura-Studio/home">Home</a></li>
-    <li><a href="/Clinica-Laura-Studio/resultados">Resultados</a></li>
-    <li><a href="/Clinica-Laura-Studio/contato" class="nav-cta">Agendar</a></li>
+    <li><a href="<?= BASE_URL ?>/home">Home</a></li>
+    <li><a href="<?= BASE_URL ?>/resultados">Resultados</a></li>
+    <li><a href="<?= BASE_URL ?>/contato" class="nav-cta">Agendar</a></li>
   </ul>
 </nav>
 
