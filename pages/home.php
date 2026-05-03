@@ -20,7 +20,7 @@
     <div class="hero-ornament">Campo Mourão, PR</div>
   </div>
   <div class="hero-image">
-    <img src="img/home-face.jpg" alt="Clínica Laura Studio — Design de Sobrancelhas">
+    <img src="img/img-home.jpg" alt="Clínica Laura Studio — Design de Sobrancelhas">
   </div>
 </section>
 

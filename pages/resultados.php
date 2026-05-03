@@ -1,3 +1,8 @@
+<?php
+$fotoresultado       = $fotoresultado       ?? [];
+$carrosselResultados = $carrosselResultados ?? [];
+?>
+
 <!-- PAGE HERO -->
 <div class="page-hero">
   <span class="eyebrow">Portfólio</span>

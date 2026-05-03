@@ -1,6 +1,6 @@
 <div class="contato-inner">
   <span class="eyebrow reveal">Agendamento</span>
-  <h   class="reveal">Marque seu <em>horário</em></h1>
+  <h1 class="reveal">Marque seu <em>horário</em></h1>
   <p class="reveal reveal-delay-1">
     Preencha o formulário abaixo e você será redirecionada ao WhatsApp com a mensagem já preenchida. Será um prazer te atender!
   </p>
