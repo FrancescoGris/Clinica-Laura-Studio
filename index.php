@@ -3,7 +3,7 @@ define('BASE_URL', (
     $_SERVER['HTTP_HOST'] === 'localhost' || $_SERVER['HTTP_HOST'] === '127.0.0.1'
 ) ? '/Clinica-Laura-Studio' : '');
 
-include 'array.php';
+include 'data/array.php';
 
 $pagina = $_GET['param'] ?? 'home';
 
@@ -37,14 +37,14 @@ $arquivo = "pages/{$pagina}.php";
 </head>
 <body class="page-body">
 
-<?php include 'pages/nav.php'; ?>
+<?php include 'includes/nav.php'; ?>
 
 <?php
 if (file_exists($arquivo)) include $arquivo;
 else include 'pages/erro.php';
 ?>
 
-<?php include 'pages/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
