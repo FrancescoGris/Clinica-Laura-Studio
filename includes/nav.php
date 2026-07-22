@@ -1,6 +1,6 @@
 <nav class="site-nav" id="siteNav">
   <a href="<?= BASE_URL ?>/home" class="nav-brand">
-    <img src="assets/img/logo-header.png" alt="Clínica Laura Studio">
+    <img src="assets/img/favicon.png" alt="Clínica Laura Studio">
   </a>
 
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">

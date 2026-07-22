@@ -224,7 +224,11 @@ body {
   .hero-image { height: 60vw; max-height: 400px; order: 1; }
   .hero-image::before { background: linear-gradient(to bottom, var(--cream) 0%, transparent 25%); }
   .hero-content { padding: 48px 28px; order: 2; }
-  .hero-ornament { left: 28px; }
+  .hero-ornament { 
+    position: static;     
+    margin-top: 40px;     
+    left: auto;           
+  }
 }
 
 /* ─── SOBRE ──────────────────────────────────────────────────── */
