@@ -6,41 +6,32 @@
   </p>
 
   <form id="agendamentoForm" novalidate>
-    <div class="form-row reveal reveal-delay-1">
-      <div class="form-group">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" placeholder="Seu nome" required>
-      </div>
-      <div class="form-group">
-        <label for="sobrenome">Sobrenome</label>
-        <input type="text" id="sobrenome" placeholder="Seu sobrenome" required>
-      </div>
-    </div>
+    <div class="form-group reveal reveal-delay-1">
+  <label for="nome">Nome</label>
+  <input type="text" id="nome" placeholder="Seu nome" required>
+</div>
 
-    <div class="form-row reveal reveal-delay-2">
-      <div class="form-group">
-        <label for="telefone">Telefone (WhatsApp)</label>
-        <input type="tel" id="telefone" placeholder="(44) 99999-9999" required>
-      </div>
-      <div class="form-group">
-        <label for="email">E-mail (opcional)</label>
-        <input type="email" id="email" placeholder="nome@exemplo.com">
-      </div>
-    </div>
+<div class="form-row reveal reveal-delay-2">
+  <div class="form-group">
+    <label for="telefone">Telefone (WhatsApp)</label>
+    <input type="tel" id="telefone" placeholder="(44) 99999-9999" required>
+  </div>
+  <div class="form-group">
+    <label for="email">E-mail (opcional)</label>
+    <input type="email" id="email" placeholder="nome@exemplo.com">
+  </div>
+</div>
 
     <div class="form-group reveal reveal-delay-2">
       <label>Serviço de interesse</label>
       <div class="form-servico">
-        <label class="servico-option">
+        <label class="servico-option" style="text-align: center;">
           <input type="radio" name="servico" value="Design de sobrancelhas" checked> Design de sobrancelhas
         </label>
-        <label class="servico-option">
+        <label class="servico-option" style="text-align: center;">
           <input type="radio" name="servico" value="Henna de sobrancelhas"> Henna de sobrancelhas
         </label>
-        <label class="servico-option">
-          <input type="radio" name="servico" value="Micropigmentação"> Micropigmentação
-        </label>
-        <label class="servico-option">
+        <label class="servico-option" style="text-align: center;">
           <input type="radio" name="servico" value="Outro / Consulta"> Outro / Consulta
         </label>
       </div>
@@ -73,20 +64,19 @@
   document.getElementById('agendamentoForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const nome      = document.getElementById('nome').value.trim();
-    const sobrenome = document.getElementById('sobrenome').value.trim();
     const telefone  = document.getElementById('telefone').value.trim();
     const email     = document.getElementById('email').value.trim();
     const servico   = document.querySelector('input[name="servico"]:checked').value;
     const mensagem  = document.getElementById('mensagem').value.trim();
     const confirmar = document.getElementById('confirmar').checked;
 
-    if (!nome || !sobrenome || !telefone || !confirmar) {
-      alert('Por favor, preencha nome, sobrenome, telefone e confirme as informações.');
+    if (!nome || !telefone || !confirmar) {
+      alert('Por favor, preencha nome, telefone e confirme as informações.');
       return;
     }
 
     let texto = `Olá, Laura! Gostaria de agendar um horário. 🌸\n\n`;
-    texto += `*Nome:* ${nome} ${sobrenome}\n`;
+    texto += `*Nome:* ${nome}\n`;
     texto += `*Telefone:* ${telefone}\n`;
     if (email)    texto += `*E-mail:* ${email}\n`;
     texto += `*Serviço:* ${servico}\n`;

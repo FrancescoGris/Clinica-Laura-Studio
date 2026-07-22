@@ -64,7 +64,7 @@ $carrosselResultados = $carrosselResultados ?? [];
 
     <div class="aval-card reveal">
       <div class="aval-top">
-        <img src="img/pfp-avaliacao1.jpg" alt="Eloá F. Martins">
+        <img src="assets/img/pfp-avaliacao1.jpg" alt="Eloá F. Martins">
         <div>
           <div class="aval-name">Eloá F. Martins</div>
           <div class="aval-stars">★★★★★</div>
@@ -76,7 +76,7 @@ $carrosselResultados = $carrosselResultados ?? [];
 
     <div class="aval-card reveal reveal-delay-1">
       <div class="aval-top">
-        <img src="img/pfp-avaliacao2.jpg" alt="Giovana N. Torres">
+        <img src="assets/img/pfp-avaliacao2.jpg" alt="Giovana N. Torres">
         <div>
           <div class="aval-name">Giovana N. Torres</div>
           <div class="aval-stars">★★★★★</div>
@@ -88,7 +88,7 @@ $carrosselResultados = $carrosselResultados ?? [];
 
     <div class="aval-card reveal reveal-delay-2">
       <div class="aval-top">
-        <img src="img/pfp-avaliacao3.jpg" alt="Anna Clara G.">
+        <img src="assets/img/pfp-avaliacao3.jpg" alt="Anna Clara G.">
         <div>
           <div class="aval-name">Anna Clara G.</div>
           <div class="aval-stars">★★★★★</div>

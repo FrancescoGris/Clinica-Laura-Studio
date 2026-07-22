@@ -285,10 +285,10 @@ body {
   color: var(--white); background: var(--plum);
   padding: 16px 40px; border-radius: 50px; text-decoration: none;
   border: 2px solid var(--plum);
-  transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
+  transition: 0.4s !important;
   cursor: pointer; white-space: nowrap;
 }
-.btn-primary-custom:hover { background: var(--plum-light); border-color: var(--plum-light); color: var(--white); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(107,15,130,0.3); }
+.btn-primary-custom:hover { background: var(--plum-light); transition: 0.4s; border-color: var(--plum-light); color: var(--white); transform: translateY(-2px); box-shadow: 0 12px 40px rgba(107,15,130,0.3); }
 
 .btn-secondary-custom {
   display: inline-flex; align-items: center; gap: 10px;
@@ -367,6 +367,10 @@ body {
 .servico-option { display: flex; align-items: center; gap: 10px; padding: 12px 16px; border: 1.5px solid var(--blush-mid); border-radius: 8px; cursor: pointer; transition: border-color 0.2s, background 0.2s; font-size: 0.9rem; color: var(--ink-soft); }
 .servico-option:has(input:checked) { border-color: var(--plum-light); background: var(--blush); color: var(--plum); }
 .servico-option input { accent-color: var(--plum); }
+
+.form-servico .servico-option:last-child {
+  grid-column: 1 / -1;
+}
 
 .form-check-custom { display: flex; align-items: flex-start; gap: 12px; font-size: 0.9rem; color: var(--ink-soft); cursor: pointer; margin-bottom: 36px; }
 .form-check-custom input { accent-color: var(--plum); margin-top: 2px; flex-shrink: 0; }

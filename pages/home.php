@@ -20,7 +20,7 @@
     <div class="hero-ornament">Campo Mourão, PR</div>
   </div>
   <div class="hero-image">
-    <img src="img/img-home.jpg" alt="Clínica Laura Studio — Design de Sobrancelhas">
+    <img src="assets/img/img-home.jpg" alt="Clínica Laura Studio — Design de Sobrancelhas">
   </div>
 </section>
 
@@ -37,7 +37,7 @@
         Mais do que estética, acredito que uma sobrancelha bem feita é capaz de transformar a forma como a gente se vê. Um olhar harmonioso, bem cuidado, para te trazer confiança e autoestima — revelando o melhor de cada pessoa.
       </p>
       <div class="sobre-divider reveal reveal-delay-3"></div>
-      <a href="https://wa.me/5544999514785" class="btn-primary-custom reveal reveal-delay-3">
+      <a href="https://wa.me/5544999514785" target="_blank" class="btn-primary-custom reveal reveal-delay-3">
         <i class="fa-brands fa-whatsapp" style="font-size:20px"></i> Fale comigo
       </a>
     </div>
